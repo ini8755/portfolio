@@ -26,6 +26,10 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        /* 이미지 컨테이너 스타일 */
+        .image-container {
+            @apply bg-slate-100 p-4 sm:p-8 rounded-xl flex justify-center items-center min-h-[300px];
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700">
@@ -135,10 +139,10 @@
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">WE-KUS CUP III</h1><p class="text-lg text-gray-500 mt-2">FESTIVAL - 여성 이스포츠 대전</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">고려대학교 학생들이 '다양한 계층에게 감각의 풍요를 선물하자'라는 모토 아래 개최한 여성 E스포츠 대회로, 제작물에 다양성을 담고자 노력하였습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>홍보물 디자인, SNS 관리</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2023.09 - 2023.11</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>3인 참여 (기여도 70%)</p></div></div></section>
             <section class="space-y-12">
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ZOWIE'의 브랜딩 이미지와 대회 현장 이벤트의 우주 컨셉을 담아 제작했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/wekus3-xbanner-zowie.jpg" alt="ZOWIE X-배너" class="rounded-lg shadow-md w-full"><img src="images/wekus3-xbanner-event.jpg" alt="현장 이벤트 X-배너" class="rounded-lg shadow-md w-full"></div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">자이언트 배너</h3><p class="mb-6">대회의 다양성이라는 컨셉을 우주 테마로 표현했습니다. 외부에서도 눈에 잘 띄도록 주목도를 높였습니다.</p><img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md w-full"></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보부스 포스터 및 폼보드</h3><p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다. 대회 정보와 체험 부스 정보를 동시에 담아 방문객의 이해를 돕고자 했습니다.</p><div class="flex justify-center"><img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터" class="rounded-lg shadow-md w-full max-w-lg"></div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">현수막 및 포토존</h3><p class="mb-6">경기장 현수막은 경기에 방해되지 않도록 단순하게, 포토존은 E-KUS의 정체성을 담아 화려하게 디자인했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/wekus3-stadium-banner.jpg" alt="경기장 현수막" class="rounded-lg shadow-md w-full"><img src="images/wekus3-photozone.jpg" alt="포토존" class="rounded-lg shadow-md w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ZOWIE'의 브랜딩 이미지와 대회 현장 이벤트의 우주 컨셉을 담아 제작했습니다.</p><div class="grid md:grid-cols-2 gap-8 image-container"><img src="images/wekus3-xbanner-zowie.jpg" alt="ZOWIE X-배너" class="rounded-lg shadow-md max-h-[500px] object-contain"><img src="images/wekus3-xbanner-event.jpg" alt="현장 이벤트 X-배너" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">자이언트 배너</h3><p class="mb-6">대회의 다양성이라는 컨셉을 우주 테마로 표현했습니다. 외부에서도 눈에 잘 띄도록 주목도를 높였습니다.</p><div class="image-container"><img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보부스 포스터 및 폼보드</h3><p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다. 대회 정보와 체험 부스 정보를 동시에 담아 방문객의 이해를 돕고자 했습니다.</p><div class="image-container"><img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">현수막 및 포토존</h3><p class="mb-6">경기장 현수막은 경기에 방해되지 않도록 단순하게, 포토존은 E-KUS의 정체성을 담아 화려하게 디자인했습니다.</p><div class="grid md:grid-cols-2 gap-8 image-container"><img src="images/wekus3-stadium-banner.jpg" alt="경기장 현수막" class="rounded-lg shadow-md max-h-[500px] object-contain"><img src="images/wekus3-photozone.jpg" alt="포토존" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
             </section>
         </div>
 
@@ -147,8 +151,8 @@
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">WE-KUS CUP II</h1><p class="text-lg text-gray-500 mt-2">여성 e스포츠 대회</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">여성 e스포츠 활성화와 국내 e스포츠 산업의 발전을 목표로 개최한 대회로 WE-KUS CUP의 정체성을 확립하고자 했습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>대회 제작물 디자인, SNS 관리</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2023.01 - 2023.06</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>3인 참여 (기여도 50%)</p></div></div></section>
             <section class="space-y-12">
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ifland' 체험 이벤트용으로 제작되었습니다. 'ifland'의 게임 배경인 우주를 컨셉으로 하여 브랜딩 이미지를 담고자 노력하였습니다.</p><div class="flex justify-center"><img src="images/wekus2-xbanner-ifland.jpg" alt="ifland 이벤트 X-배너" class="rounded-lg shadow-md max-w-md w-full"></div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">포토존</h3><p class="mb-6">대회의 로고가 잘 드러나면서 여러 스폰서사의 로고가 조화롭게 보일 수 있도록 배치에 신경 썼습니다.</p><img src="images/wekus2-photozone.jpg" alt="WE-KUS CUP II 포토존" class="rounded-lg shadow-md w-full"></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ifland' 체험 이벤트용으로 제작되었습니다. 'ifland'의 게임 배경인 우주를 컨셉으로 하여 브랜딩 이미지를 담고자 노력하였습니다.</p><div class="image-container"><img src="images/wekus2-xbanner-ifland.jpg" alt="ifland 이벤트 X-배너" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">포토존</h3><p class="mb-6">대회의 로고가 잘 드러나면서 여러 스폰서사의 로고가 조화롭게 보일 수 있도록 배치에 신경 썼습니다.</p><div class="image-container"><img src="images/wekus2-photozone.jpg" alt="WE-KUS CUP II 포토존" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
             </section>
         </div>
 
@@ -157,9 +161,9 @@
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">Adot English Songtan</h1><p class="text-lg text-gray-500 mt-2">학원 홍보 및 이벤트 디자인</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">학원을 홍보하거나 학원에서 진행하는 이벤트를 위해 디자인했습니다. 학생과 학부모 모두에게 기억에 남을 수 있도록 노력하였습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>홍보물/영상/이벤트 제작물 디자인</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2024.01 - 2024.12</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>1인 참여 (기여도 100%)</p></div></div></section>
             <section class="space-y-12">
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 전단지</h3><p class="mb-6">만화 컨셉을 활용하여 학원의 장점을 쉽고 빠르게 파악할 수 있도록 디자인했습니다.</p><div class="flex justify-center"><img src="images/adot-flyer.jpg" alt="학원 홍보 전단지" class="rounded-lg shadow-md max-w-2xl w-full"></div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">이벤트 제작물</h3><p class="mb-6">학원 뽑기 이벤트의 '꽝' 상품으로 사용될 기프티콘입니다. 유쾌하게 받아들일 수 있도록 재미있는 밈(meme) 이미지를 활용했습니다.</p><div class="flex justify-center"><img src="images/adot-gifticon1.jpg" alt="이벤트 기프티콘 1" class="rounded-lg shadow-md w-full max-w-md"></div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 영상</h3><p class="mb-6">학부모와 학생을 대상으로 각각 다른 메시지를 전달하는 두 종류의 홍보 영상을 기획 및 편집했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/adot-video-parents.jpg" alt="학부모 대상 홍보 영상" class="rounded-lg shadow-md w-full"><img src="images/adot-video-students.jpg" alt="학생 대상 홍보 영상" class="rounded-lg shadow-md w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 전단지</h3><p class="mb-6">만화 컨셉을 활용하여 학원의 장점을 쉽고 빠르게 파악할 수 있도록 디자인했습니다.</p><div class="image-container"><img src="images/adot-flyer.jpg" alt="학원 홍보 전단지" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">이벤트 제작물</h3><p class="mb-6">학원 뽑기 이벤트의 '꽝' 상품으로 사용될 기프티콘입니다. 유쾌하게 받아들일 수 있도록 재미있는 밈(meme) 이미지를 활용했습니다.</p><div class="image-container"><img src="images/adot-gifticon1.jpg" alt="이벤트 기프티콘 1" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 영상</h3><p class="mb-6">학부모와 학생을 대상으로 각각 다른 메시지를 전달하는 두 종류의 홍보 영상을 기획 및 편집했습니다.</p><div class="grid md:grid-cols-2 gap-8 image-container"><img src="images/adot-video-parents.jpg" alt="학부모 대상 홍보 영상" class="rounded-lg shadow-md max-h-[300px] object-contain"><img src="images/adot-video-students.jpg" alt="학생 대상 홍보 영상" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
             </section>
         </div>
         
