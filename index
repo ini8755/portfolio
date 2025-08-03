@@ -53,7 +53,7 @@
         </div>
     </header>
 
-    <!-- 메인 콘텐츠 (소개, 프로젝트 목록, 어바웃, 연락처) -->
+    <!-- 메인 콘텐츠 -->
     <div id="main-content">
         <!-- 메인 섹션 (Home) -->
         <main id="home" class="container mx-auto px-6 py-20 md:py-32 text-center section-fade-in">
@@ -61,7 +61,7 @@
                 <!-- ❗ 프로필 사진: images/profile.jpg -->
                 <img src="images/profile.jpg" alt="김수진 프로필 사진" class="w-36 h-36 rounded-full shadow-xl mb-6 object-cover">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-800">Kim SuJin</h1>
-                <p class="text-xl md:text-2xl text-blue-600 font-semibold mt-2"> Portfolio</p>
+                <p class="text-xl md:text-2xl text-blue-600 font-semibold mt-2">Portfolio</p>
                 <p class="max-w-2xl mx-auto mt-6 text-lg text-gray-600">
                     안녕하세요, 끊임없이 발전하고자 노력하는 김수진입니다.
                     타고난 끈기와 성실함으로 성장하는 사람이 되겠습니다.
@@ -75,7 +75,6 @@
                 <h2 class="section-title">PROJECTS</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div class="card cursor-pointer" data-project="wekus3">
-                        <!-- ❗ 카드 이미지: images/wekus3-card.jpg -->
                         <img src="images/wekus3-card.jpg" alt="WE-KUS CUP III 프로젝트 이미지" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">WE-KUS CUP III</h3>
@@ -84,7 +83,6 @@
                         </div>
                     </div>
                     <div class="card cursor-pointer" data-project="wekus2">
-                        <!-- ❗ 카드 이미지: images/wekus2-card.jpg -->
                         <img src="images/wekus2-card.jpg" alt="WE-KUS CUP II 프로젝트 이미지" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">WE-KUS CUP II</h3>
@@ -93,7 +91,6 @@
                         </div>
                     </div>
                     <div class="card cursor-pointer" data-project="adot">
-                        <!-- ❗ 카드 이미지: images/adot-card.jpg -->
                         <img src="images/adot-card.jpg" alt="Adot English 프로젝트 이미지" class="w-full h-48 object-cover">
                         <div class="p-6">
                             <h3 class="text-xl font-bold mb-2">Adot English Songtan</h3>
@@ -105,7 +102,7 @@
             </div>
         </section>
 
-        <!-- 자기소개, 연락처 등 나머지 섹션은 이전과 동일 -->
+        <!-- 자기소개 섹션 -->
         <section id="about" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6">
                 <h2 class="section-title">ABOUT ME</h2>
@@ -118,6 +115,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- 연락처 섹션 -->
         <footer id="contact" class="bg-gray-800 text-white py-12">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-4">CONTACT</h2>
@@ -137,25 +136,10 @@
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">WE-KUS CUP III</h1><p class="text-lg text-gray-500 mt-2">FESTIVAL - 여성 이스포츠 대전</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">고려대학교 학생들이 '다양한 계층에게 감각의 풍요를 선물하자'라는 모토 아래 개최한 여성 E스포츠 대회로, 제작물에 다양성을 담고자 노력하였습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>홍보물 디자인, SNS 관리</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2023.09 - 2023.11</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>3인 참여 (기여도 70%)</p></div></div></section>
             <section class="space-y-12">
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ZOWIE'의 브랜딩 이미지와 대회 현장 이벤트의 우주 컨셉을 담아 제작했습니다.</p><div class="grid md:grid-cols-2 gap-6">
-                    <!-- ❗ 상세 이미지: images/wekus3-xbanner-zowie.jpg -->
-                    <img src="images/wekus3-xbanner-zowie.jpg" alt="ZOWIE X-배너" class="rounded-lg shadow-md w-full">
-                    <!-- ❗ 상세 이미지: images/wekus3-xbanner-event.jpg -->
-                    <img src="images/wekus3-xbanner-event.jpg" alt="현장 이벤트 X-배너" class="rounded-lg shadow-md w-full">
-                </div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">자이언트 배너</h3><p class="mb-6">대회의 다양성이라는 컨셉을 우주 테마로 표현했습니다. 외부에서도 눈에 잘 띄도록 주목도를 높였습니다.</p>
-                <!-- ❗ 상세 이미지: images/wekus3-giant-banner.jpg -->
-                <img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md w-full"></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보부스 포스터 및 폼보드</h3><p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다. 대회 정보와 체험 부스 정보를 동시에 담아 방문객의 이해를 돕고자 했습니다.</p><div class="grid md:grid-cols-2 gap-6">
-                    <!-- ❗ 상세 이미지: images/wekus3-booth-poster.jpg -->
-                    <img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터, 폼보드" class="rounded-lg shadow-md w-full">
-                </div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">현수막 및 포토존</h3><p class="mb-6">경기장 현수막은 경기에 방해되지 않도록 단순하게, 포토존은 E-KUS의 정체성을 담아 화려하게 디자인했습니다.</p><div class="grid md:grid-cols-2 gap-6">
-                    <!-- ❗ 상세 이미지: images/wekus3-stadium-banner.jpg -->
-                    <img src="images/wekus3-stadium-banner.jpg" alt="경기장 현수막" class="rounded-lg shadow-md w-full">
-                    <!-- ❗ 상세 이미지: images/wekus3-photozone.jpg -->
-                    <img src="images/wekus3-photozone.jpg" alt="포토존" class="rounded-lg shadow-md w-full">
-                </div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ZOWIE'의 브랜딩 이미지와 대회 현장 이벤트의 우주 컨셉을 담아 제작했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/wekus3-xbanner-zowie.jpg" alt="ZOWIE X-배너" class="rounded-lg shadow-md w-full"><img src="images/wekus3-xbanner-event.jpg" alt="현장 이벤트 X-배너" class="rounded-lg shadow-md w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">자이언트 배너</h3><p class="mb-6">대회의 다양성이라는 컨셉을 우주 테마로 표현했습니다. 외부에서도 눈에 잘 띄도록 주목도를 높였습니다.</p><img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md w-full"></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보부스 포스터 및 폼보드</h3><p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다. 대회 정보와 체험 부스 정보를 동시에 담아 방문객의 이해를 돕고자 했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터" class="rounded-lg shadow-md w-full"><img src="images/wekus3-booth-foam.jpg" alt="홍보부스 폼보드" class="rounded-lg shadow-md w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">현수막 및 포토존</h3><p class="mb-6">경기장 현수막은 경기에 방해되지 않도록 단순하게, 포토존은 E-KUS의 정체성을 담아 화려하게 디자인했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/wekus3-stadium-banner.jpg" alt="경기장 현수막" class="rounded-lg shadow-md w-full"><img src="images/wekus3-photozone.jpg" alt="포토존" class="rounded-lg shadow-md w-full"></div></div>
             </section>
         </div>
 
@@ -164,13 +148,8 @@
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">WE-KUS CUP II</h1><p class="text-lg text-gray-500 mt-2">여성 e스포츠 대회</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">여성 e스포츠 활성화와 국내 e스포츠 산업의 발전을 목표로 개최한 대회로 WE-KUS CUP의 정체성을 확립하고자 했습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>대회 제작물 디자인, SNS 관리</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2023.01 - 2023.06</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>3인 참여 (기여도 50%)</p></div></div></section>
             <section class="space-y-12">
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ifland' 체험 이벤트용으로 제작되었습니다. 'ifland'의 게임 배경인 우주를 컨셉으로 하여 브랜딩 이미지를 담고자 노력하였습니다.</p><div class="flex justify-center">
-                    <!-- ❗ 상세 이미지: images/wekus2-xbanner-ifland.jpg -->
-                    <img src="images/wekus2-xbanner-ifland.jpg" alt="ifland 이벤트 X-배너" class="rounded-lg shadow-md max-w-md w-full">
-                </div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">포토존</h3><p class="mb-6">대회의 로고가 잘 드러나면서 여러 스폰서사의 로고가 조화롭게 보일 수 있도록 배치에 신경 썼습니다.</p>
-                <!-- ❗ 상세 이미지: images/wekus2-photozone.jpg -->
-                <img src="images/wekus2-photozone.jpg" alt="WE-KUS CUP II 포토존" class="rounded-lg shadow-md w-full"></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ifland' 체험 이벤트용으로 제작되었습니다. 'ifland'의 게임 배경인 우주를 컨셉으로 하여 브랜딩 이미지를 담고자 노력하였습니다.</p><div class="flex justify-center"><img src="images/wekus2-xbanner-ifland.jpg" alt="ifland 이벤트 X-배너" class="rounded-lg shadow-md max-w-md w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">포토존</h3><p class="mb-6">대회의 로고가 잘 드러나면서 여러 스폰서사의 로고가 조화롭게 보일 수 있도록 배치에 신경 썼습니다.</p><img src="images/wekus2-photozone.jpg" alt="WE-KUS CUP II 포토존" class="rounded-lg shadow-md w-full"></div>
             </section>
         </div>
 
@@ -179,27 +158,16 @@
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">Adot English Songtan</h1><p class="text-lg text-gray-500 mt-2">학원 홍보 및 이벤트 디자인</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">학원을 홍보하거나 학원에서 진행하는 이벤트를 위해 디자인했습니다. 학생과 학부모 모두에게 기억에 남을 수 있도록 노력하였습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>홍보물/영상/이벤트 제작물 디자인</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2024.01 - 2024.12</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>1인 참여 (기여도 100%)</p></div></div></section>
             <section class="space-y-12">
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 전단지</h3><p class="mb-6">만화 컨셉을 활용하여 학원의 장점을 쉽고 빠르게 파악할 수 있도록 디자인했습니다.</p><div class="flex justify-center">
-                    <!-- ❗ 상세 이미지: images/adot-flyer.jpg -->
-                    <img src="images/adot-flyer.jpg" alt="학원 홍보 전단지" class="rounded-lg shadow-md max-w-2xl w-full">
-                </div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">이벤트 제작물</h3><p class="mb-6">학원 뽑기 이벤트의 '꽝' 상품으로 사용될 기프티콘입니다. 유쾌하게 받아들일 수 있도록 재미있는 밈(meme) 이미지를 활용했습니다.</p><div class="grid md:grid-cols-2 gap-6">
-                    <!-- ❗ 상세 이미지: images/adot-gifticon1.jpg -->
-                    <img src="images/adot-gifticon1.jpg" alt="이벤트 기프티콘 1" class="rounded-lg shadow-md w-full">
-                </div></div>
-                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 영상</h3><p class="mb-6">학부모와 학생을 대상으로 각각 다른 메시지를 전달하는 두 종류의 홍보 영상을 기획 및 편집했습니다.</p><div class="grid md:grid-cols-2 gap-6">
-                    <!-- ❗ 상세 이미지: images/adot-video-parents.jpg -->
-                    <img src="images/adot-video-parents.jpg" alt="학부모 대상 홍보 영상" class="rounded-lg shadow-md w-full">
-                    <!-- ❗ 상세 이미지: images/adot-video-students.jpg -->
-                    <img src="images/adot-video-students.jpg" alt="학생 대상 홍보 영상" class="rounded-lg shadow-md w-full">
-                </div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 전단지</h3><p class="mb-6">만화 컨셉을 활용하여 학원의 장점을 쉽고 빠르게 파악할 수 있도록 디자인했습니다.</p><div class="flex justify-center"><img src="images/adot-flyer.jpg" alt="학원 홍보 전단지" class="rounded-lg shadow-md max-w-2xl w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">이벤트 제작물</h3><p class="mb-6">학원 뽑기 이벤트의 '꽝' 상품으로 사용될 기프티콘입니다. 유쾌하게 받아들일 수 있도록 재미있는 밈(meme) 이미지를 활용했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/adot-gifticon1.jpg" alt="이벤트 기프티콘 1" class="rounded-lg shadow-md w-full"><img src="images/adot-gifticon2.jpg" alt="이벤트 기프티콘 2" class="rounded-lg shadow-md w-full"></div></div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 영상</h3><p class="mb-6">학부모와 학생을 대상으로 각각 다른 메시지를 전달하는 두 종류의 홍보 영상을 기획 및 편집했습니다.</p><div class="grid md:grid-cols-2 gap-6"><img src="images/adot-video-parents.jpg" alt="학부모 대상 홍보 영상" class="rounded-lg shadow-md w-full"><img src="images/adot-video-students.jpg" alt="학생 대상 홍보 영상" class="rounded-lg shadow-md w-full"></div></div>
             </section>
         </div>
         
         <!-- 뒤로가기 버튼 -->
-        <div class="text-center mt-8">
-            <button id="back-to-main" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition-colors duration-300">
-                &larr; 프로젝트 목록으로 돌아가기
+        <div class="text-center my-12">
+            <button id="back-to-main" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors duration-300 text-lg">
+                &larr; 프로젝트 목록으로
             </button>
         </div>
     </div>
@@ -209,11 +177,14 @@
             const mainContent = document.getElementById('main-content');
             const projectDetailContent = document.getElementById('project-detail-content');
             const projectCards = document.querySelectorAll('.card[data-project]');
-            const backButton = document.getElementById('back-to-main');
+            const backButton = document.getElementById('back-to-main').parentElement;
             const homeLink = document.getElementById('home-link');
             const mainNavLinks = document.querySelectorAll('.main-nav a');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuBtn = document.getElementById('menu-btn');
+
+            // 초기 상태에서 뒤로가기 버튼 숨기기
+            backButton.style.display = 'none';
 
             projectCards.forEach(card => {
                 card.addEventListener('click', () => {
@@ -226,33 +197,20 @@
             
             homeLink.addEventListener('click', (e) => {
                 e.preventDefault();
-                if (projectDetailContent.classList.contains('hidden')) {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                } else {
-                    showMainContent();
-                }
+                showMainContent();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
             mainNavLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    showMainContent();
                     const targetId = link.getAttribute('href');
-                    if (projectDetailContent.classList.contains('hidden')) {
-                        // 메인 페이지에 있을 때만 스크롤
+                    setTimeout(() => {
                         const targetElement = document.querySelector(targetId);
-                        if(targetElement) {
-                            e.preventDefault();
-                            targetElement.scrollIntoView({ behavior: 'smooth' });
-                        }
-                    } else {
-                        // 상세 페이지에 있을 땐 메인으로 돌아가기
-                        e.preventDefault();
-                        showMainContent();
-                        setTimeout(() => {
-                            const targetElement = document.querySelector(targetId);
-                            if(targetElement) targetElement.scrollIntoView({ behavior: 'smooth' });
-                        }, 100); // 메인 콘텐츠가 표시된 후 스크롤
-                    }
-                    if (mobileMenu.classList.contains('hidden') === false) {
+                        if(targetElement) targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 50);
+                    if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
                 });
@@ -263,21 +221,25 @@
             });
 
             function showProjectDetail(projectId) {
-                mainContent.classList.add('hidden');
-                document.querySelectorAll('.project-detail-page').forEach(page => page.classList.add('hidden'));
+                mainContent.style.display = 'none';
+                projectDetailContent.style.display = 'block';
+                backButton.style.display = 'block';
+                
+                document.querySelectorAll('.project-detail-page').forEach(page => {
+                    page.classList.add('hidden');
+                });
                 const targetPage = document.getElementById(`detail-${projectId}`);
                 if (targetPage) {
-                    projectDetailContent.classList.remove('hidden');
                     targetPage.classList.remove('hidden');
                     window.scrollTo(0, 0);
                 }
             }
 
             function showMainContent() {
-                if (projectDetailContent.classList.contains('hidden')) return;
-                projectDetailContent.classList.add('hidden');
-                mainContent.classList.remove('hidden');
-                // 페이지 상단으로 스크롤하지 않음, 사용자가 있던 위치 유지
+                if (mainContent.style.display === 'block') return;
+                projectDetailContent.style.display = 'none';
+                mainContent.style.display = 'block';
+                backButton.style.display = 'none';
             }
         });
     </script>
