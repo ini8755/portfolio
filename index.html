@@ -30,6 +30,17 @@
         .image-container {
             @apply bg-slate-100 p-4 sm:p-8 rounded-xl flex justify-center items-center min-h-[300px];
         }
+        /* 팝업 모달 스타일 */
+        .modal-enter {
+            animation: fadeIn 0.3s ease-out;
+        }
+        .modal-leave {
+            animation: fadeOut 0.3s ease-in;
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-700">
@@ -125,7 +136,13 @@
                 <h2 class="text-3xl font-bold mb-4">CONTACT</h2>
                 <p class="mb-8">언제든지 편하게 연락주세요.</p>
                 <div class="flex justify-center items-center space-x-4 md:space-x-6">
-                    <a href="mailto:ini8755@naver.com" class="hover:text-blue-400 transition-colors">Email</a><span>|</span><a href="tel:010-3716-5398" class="hover:text-blue-400 transition-colors">Phone</a><span>|</span><a href="https://blog.naver.com/jjumbo417" target="_blank" class="hover:text-blue-400 transition-colors">Blog</a><span>|</span><a href="https://www.instagram.com/jjumbo417" target="_blank" class="hover:text-blue-400 transition-colors">Instagram</a>
+                    <button id="email-btn" class="hover:text-blue-400 transition-colors">Email</button>
+                    <span>|</span>
+                    <button id="phone-btn" class="hover:text-blue-400 transition-colors">Phone</button>
+                    <span>|</span>
+                    <a href="https://blog.naver.com/jjumbo417" target="_blank" class="hover:text-blue-400 transition-colors">Blog</a>
+                    <span>|</span>
+                    <a href="https://www.instagram.com/jjumbo417" target="_blank" class="hover:text-blue-400 transition-colors">Instagram</a>
                 </div>
                 <p class="mt-8 text-sm text-gray-400">&copy; 2025 Kim SuJin. All Rights Reserved.</p>
             </div>
@@ -140,30 +157,13 @@
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>홍보물 디자인, SNS 관리</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2023.09 - 2023.11</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>3인 참여 (기여도 70%)</p></div></div></section>
             <section class="space-y-12">
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">X-배너</h3><p class="mb-6">스폰서 'ZOWIE'의 브랜딩 이미지와 대회 현장 이벤트의 우주 컨셉을 담아 제작했습니다.</p><div class="grid md:grid-cols-2 gap-8 image-container"><img src="images/wekus3-xbanner-zowie.jpg" alt="ZOWIE X-배너" class="rounded-lg shadow-md max-h-[500px] object-contain"><img src="images/wekus3-xbanner-event.jpg" alt="현장 이벤트 X-배너" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
-                
-                <!-- [수정됨] 자이언트 배너와 홍보부스를 2열 그리드로 변경 -->
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
-                        <h3 class="text-2xl font-bold mb-4">자이언트 배너</h3>
-                        <p class="mb-6">대회의 다양성이라는 컨셉을 우주 테마로 표현했습니다.</p>
-                        <div class="image-container h-full">
-                            <img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md max-h-[500px] object-contain">
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
-                        <h3 class="text-2xl font-bold mb-4">홍보부스 포스터</h3>
-                        <p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다.</p>
-                        <div class="image-container h-full">
-                            <img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터" class="rounded-lg shadow-md max-h-[500px] object-contain">
-                        </div>
-                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">자이언트 배너</h3><p class="mb-6">대회의 다양성이라는 컨셉을 우주 테마로 표현했습니다.</p><div class="image-container h-full"><img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보부스 포스터</h3><p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다.</p><div class="image-container h-full"><img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">현수막 및 포토존</h3><p class="mb-6">경기장 현수막은 경기에 방해되지 않도록 단순하게, 포토존은 E-KUS의 정체성을 담아 화려하게 디자인했습니다.</p><div class="grid md:grid-cols-2 gap-8 image-container"><img src="images/wekus3-stadium-banner.jpg" alt="경기장 현수막" class="rounded-lg shadow-md max-h-[500px] object-contain"><img src="images/wekus3-photozone.jpg" alt="포토존" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
             </section>
         </div>
-
-        <!-- WE-KUS CUP II -->
         <div id="detail-wekus2" class="project-detail-page hidden container mx-auto px-6 py-16 section-fade-in">
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">WE-KUS CUP II</h1><p class="text-lg text-gray-500 mt-2">여성 e스포츠 대회</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">여성 e스포츠 활성화와 국내 e스포츠 산업의 발전을 목표로 개최한 대회로 WE-KUS CUP의 정체성을 확립하고자 했습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>대회 제작물 디자인, SNS 관리</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2023.01 - 2023.06</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>3인 참여 (기여도 50%)</p></div></div></section>
@@ -172,8 +172,6 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">포토존</h3><p class="mb-6">대회의 로고가 잘 드러나면서 여러 스폰서사의 로고가 조화롭게 보일 수 있도록 배치에 신경 썼습니다.</p><div class="image-container"><img src="images/wekus2-photozone.jpg" alt="WE-KUS CUP II 포토존" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
             </section>
         </div>
-
-        <!-- Adot English -->
         <div id="detail-adot" class="project-detail-page hidden container mx-auto px-6 py-16 section-fade-in">
             <section class="text-center mb-16"><h1 class="text-4xl md:text-5xl font-bold text-gray-800">Adot English Songtan</h1><p class="text-lg text-gray-500 mt-2">학원 홍보 및 이벤트 디자인</p><p class="max-w-3xl mx-auto mt-6 text-lg text-gray-600">학원을 홍보하거나 학원에서 진행하는 이벤트를 위해 디자인했습니다. 학생과 학부모 모두에게 기억에 남을 수 있도록 노력하였습니다.</p></section>
             <section class="bg-white rounded-xl shadow-lg p-8 mb-16"><div class="grid md:grid-cols-3 gap-8 text-center"><div><h3 class="font-bold text-lg text-blue-600 mb-2">My Role</h3><p>홍보물/영상/이벤트 제작물 디자인</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Period</h3><p>2024.01 - 2024.12</p></div><div><h3 class="font-bold text-lg text-blue-600 mb-2">Contribution</h3><p>1인 참여 (기여도 100%)</p></div></div></section>
@@ -183,12 +181,22 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 영상</h3><p class="mb-6">학부모와 학생을 대상으로 각각 다른 메시지를 전달하는 두 종류의 홍보 영상을 기획 및 편집했습니다.</p><div class="grid md:grid-cols-2 gap-8 image-container"><img src="images/adot-video-parents.jpg" alt="학부모 대상 홍보 영상" class="rounded-lg shadow-md max-h-[300px] object-contain"><img src="images/adot-video-students.jpg" alt="학생 대상 홍보 영상" class="rounded-lg shadow-md max-h-[500px] object-contain"></div></div>
             </section>
         </div>
-        
-        <!-- 뒤로가기 버튼 -->
         <div class="text-center my-12">
             <button id="back-to-main" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors duration-300 text-lg">
                 &larr; 프로젝트 목록으로
             </button>
+        </div>
+    </div>
+
+    <!-- 팝업 모달 -->
+    <div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-60 hidden justify-center items-center z-50 p-4 modal-enter">
+        <div class="bg-white rounded-2xl p-8 shadow-xl w-full max-w-sm text-center transform transition-all">
+            <h3 id="modal-title" class="text-2xl font-bold mb-4 text-gray-800"></h3>
+            <p id="modal-content" class="text-lg bg-gray-100 p-4 rounded-lg mb-6 text-gray-700 break-words"></p>
+            <div class="flex gap-4">
+                <button id="copy-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">복사하기</button>
+                <button id="close-btn" class="w-full bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-lg hover:bg-gray-300 transition-colors duration-300">닫기</button>
+            </div>
         </div>
     </div>
 
@@ -202,6 +210,15 @@
             const mainNavLinks = document.querySelectorAll('.main-nav a');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuBtn = document.getElementById('menu-btn');
+            
+            // 팝업 모달 관련 요소
+            const contactModal = document.getElementById('contact-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+            const copyBtn = document.getElementById('copy-btn');
+            const closeBtn = document.getElementById('close-btn');
+            const emailBtn = document.getElementById('email-btn');
+            const phoneBtn = document.getElementById('phone-btn');
 
             backButton.style.display = 'none';
 
@@ -260,6 +277,57 @@
                 mainContent.style.display = 'block';
                 backButton.style.display = 'none';
             }
+
+            // 팝업 모달 기능
+            function showModal(title, content) {
+                modalTitle.textContent = title;
+                modalContent.textContent = content;
+                contactModal.classList.remove('hidden');
+                contactModal.classList.add('flex');
+            }
+
+            function hideModal() {
+                contactModal.classList.add('modal-leave');
+                setTimeout(() => {
+                    contactModal.classList.add('hidden');
+                    contactModal.classList.remove('flex', 'modal-leave');
+                }, 300);
+            }
+
+            emailBtn.addEventListener('click', () => {
+                showModal('Email', 'ini8755@naver.com');
+            });
+
+            phoneBtn.addEventListener('click', () => {
+                showModal('Phone', '010-3716-5398');
+            });
+
+            closeBtn.addEventListener('click', hideModal);
+            contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) {
+                    hideModal();
+                }
+            });
+
+            copyBtn.addEventListener('click', () => {
+                const textToCopy = modalContent.textContent;
+                const tempTextarea = document.createElement('textarea');
+                tempTextarea.value = textToCopy;
+                document.body.appendChild(tempTextarea);
+                tempTextarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempTextarea);
+
+                copyBtn.textContent = '복사 완료!';
+                copyBtn.classList.add('bg-green-500', 'hover:bg-green-600');
+                copyBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+
+                setTimeout(() => {
+                    copyBtn.textContent = '복사하기';
+                    copyBtn.classList.remove('bg-green-500', 'hover:bg-green-600');
+                    copyBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                }, 2000);
+            });
         });
     </script>
 
