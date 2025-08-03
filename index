@@ -148,9 +148,7 @@
                 <img src="images/wekus3-giant-banner.jpg" alt="자이언트 배너" class="rounded-lg shadow-md w-full"></div>
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보부스 포스터 및 폼보드</h3><p class="mb-6">교내 행사 홍보 부스에서 사용될 제작물입니다. 대회 정보와 체험 부스 정보를 동시에 담아 방문객의 이해를 돕고자 했습니다.</p><div class="grid md:grid-cols-2 gap-6">
                     <!-- ❗ 상세 이미지: images/wekus3-booth-poster.jpg -->
-                    <img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터" class="rounded-lg shadow-md w-full">
-                    <!-- ❗ 상세 이미지: images/wekus3-booth-foam.jpg -->
-                    <img src="images/wekus3-booth-foam.jpg" alt="홍보부스 폼보드" class="rounded-lg shadow-md w-full">
+                    <img src="images/wekus3-booth-poster.jpg" alt="홍보부스 포스터, 폼보드" class="rounded-lg shadow-md w-full">
                 </div></div>
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">현수막 및 포토존</h3><p class="mb-6">경기장 현수막은 경기에 방해되지 않도록 단순하게, 포토존은 E-KUS의 정체성을 담아 화려하게 디자인했습니다.</p><div class="grid md:grid-cols-2 gap-6">
                     <!-- ❗ 상세 이미지: images/wekus3-stadium-banner.jpg -->
@@ -188,8 +186,6 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">이벤트 제작물</h3><p class="mb-6">학원 뽑기 이벤트의 '꽝' 상품으로 사용될 기프티콘입니다. 유쾌하게 받아들일 수 있도록 재미있는 밈(meme) 이미지를 활용했습니다.</p><div class="grid md:grid-cols-2 gap-6">
                     <!-- ❗ 상세 이미지: images/adot-gifticon1.jpg -->
                     <img src="images/adot-gifticon1.jpg" alt="이벤트 기프티콘 1" class="rounded-lg shadow-md w-full">
-                    <!-- ❗ 상세 이미지: images/adot-gifticon2.jpg -->
-                    <img src="images/adot-gifticon2.jpg" alt="이벤트 기프티콘 2" class="rounded-lg shadow-md w-full">
                 </div></div>
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8"><h3 class="text-2xl font-bold mb-4">홍보 영상</h3><p class="mb-6">학부모와 학생을 대상으로 각각 다른 메시지를 전달하는 두 종류의 홍보 영상을 기획 및 편집했습니다.</p><div class="grid md:grid-cols-2 gap-6">
                     <!-- ❗ 상세 이미지: images/adot-video-parents.jpg -->
